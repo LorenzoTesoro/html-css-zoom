@@ -1,0 +1,37 @@
+/* #region common rules */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Lato', sans-serif;
+}
+img{
+    width:100%;
+}
+
+:root{
+    --bg-dark:#000000;
+    --light-dark:#222222;
+    --text-color:#E7EFEF;
+}
+/* fonts 
+    13px;
+*/
+
+
+/* #endregion common rules */
+
+/* #region utiliy */
+.d-flex{
+    display:flex;
+    gap:0.3rem;
+}
+
+.col-1{
+    width:calc(( 100vw / 7) * 1);   
+}
+
+/* #endregion utility */
+
