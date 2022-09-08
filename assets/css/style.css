@@ -46,15 +46,16 @@ i{
     padding: 3.5rem 3.5rem 1.5rem;
 }
 
-.speaker_view{
+.speaker_view_icon{
     background-color: var(--bg-lighter);
     color:var(--white);
+    padding: 0.25rem;
+    display: inline-block;
+    margin-top:0.35rem;
+    margin-right:0.35rem;
+    border-radius: 0.35rem;
+    float:right;
 }
-
-.speaker_view span{
-    display:inline-block;
-}
-
 
 .user_name{
     background-color:var(--overlay);
