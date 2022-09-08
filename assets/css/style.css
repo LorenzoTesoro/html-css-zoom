@@ -6,6 +6,8 @@
 }
 body{
     font-family:'Lato', sans-serif;
+    background-color: var(--bg-dark);
+    font-size:13px;
 }
 img{
     width:100%;
@@ -14,12 +16,15 @@ img{
 :root{
     --bg-dark:#000000;
     --light-dark:#222222;
-    --text-color:#E7EFEF;
-}
-/* fonts 
-    13px;
-*/
+    --white:#E7EFEF;
+    --overlay:#7e8e9ea8;
+    --bg-lighter:#4A4A4A;
 
+}
+
+i{
+    color:var(--white);
+}
 
 /* #endregion common rules */
 
@@ -30,8 +35,43 @@ img{
 }
 
 .col-1{
-    width:calc(( 100vw / 7) * 1);   
+    width:calc(( 100vw / 7) * 1);
+    position:relative;
 }
 
 /* #endregion utility */
 
+/* #region site_main */
+#site_main{
+    padding: 3.5rem 3.5rem 1.5rem;
+}
+
+.speaker_view{
+    background-color: var(--bg-lighter);
+    color:var(--white);
+}
+
+.speaker_view span{
+    display:inline-block;
+}
+
+
+.user_name{
+    background-color:var(--overlay);
+    display: inline;
+    padding:0.25rem;
+    position:absolute;
+    left: 0;
+    bottom:0.25rem;
+}
+i+span{
+    color:var(--white);
+}
+/* #endregion site_main */
+
+/* #region tool_bar */
+.tool_bar{
+    background-color: var(--light-dark);
+    height:50px;
+}
+/* #endregion tool_bar */
