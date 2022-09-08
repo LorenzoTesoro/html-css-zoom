@@ -39,9 +39,8 @@ i{
     position:relative;
 }
 
-.col-3{
-    width:calc(( 100vw / 3) * 1);
-    position:relative;
+.col-4{
+    width:calc(( 100vw / 12) * 4);
 }
 
 /* #endregion utility */
@@ -78,25 +77,39 @@ i+span{
 /* #region tool_bar */
 .tool_bar{
     background-color: var(--light-dark);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    color: var(--white);
+    gap:0;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    padding-left: 0.50rem;
 }
+
 .tool_bar i{
     font-size: 1.5rem;
-    padding-left: 0.50rem;
-    padding-right: 0.50rem;
 }
-.tool_bar .row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.tool_bar i.small{
+    font-size:0.75rem;
+}
+.tool_bar .d-flex i+div{
+    margin-top:0.5rem;
 }
 
-.end{
-    padding-right: 0.50rem;
+.col-4.d-flex > div{
+    text-align:center;
+}
+.col-4.center{
+    gap:0.5rem;
+}
+
+.col-4.right{
+    justify-content:flex-end ;
+    align-self:center;
     color:red;
-    height: 100%;
-    background-color: var(--bg-lighter);
+    background-color: var(--white;
 }
-/* #endregion tool_bar */
 
+.green{
+    color:green;
+}
+
+/* #endregion tool_bar */
